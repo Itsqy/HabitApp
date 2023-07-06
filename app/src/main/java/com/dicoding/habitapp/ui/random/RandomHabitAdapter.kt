@@ -13,7 +13,6 @@ import com.dicoding.habitapp.data.Habit
 class RandomHabitAdapter(
     private val onClick: (Habit) -> Unit
 ) : RecyclerView.Adapter<RandomHabitAdapter.PagerViewHolder>() {
-
     private val habitMap = LinkedHashMap<PageType, Habit>()
 
     fun submitData(key: PageType, habit: Habit) {
